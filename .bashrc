@@ -20,7 +20,7 @@ BLACK='\[\e[0;30m\]'
 WHITE='\[\e[0;37m\]'
 
 if [ "`id -u`" -eq 0 ]; then
-        PS1="[$(date +%H:%M:%S)][${RED}\u${WHITE}@\h \W]\\$ "
+        PS1='[`date +%H:%M:%S`]'"[${RED}\u${WHITE}@\h \W]\\$ "
 else
-        PS1="[$(date +%H:%M:%S)][${GREEN}\u${WHITE}@\h \W]\\$ "
+        PS1='[`date +%H:%M:%S`]'"[${GREEN}\u${WHITE}@\h \W]\\$ "
 fi
